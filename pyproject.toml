@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "homeworks"
+version = "0.1.0"
+description = ""
+authors = ["u_alex90 <u_alex90@mail.ru>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+psycopg2-binary = "^2.9.7"
+python-dotenv = "^1.0.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
