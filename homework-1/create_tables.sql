@@ -12,7 +12,7 @@ CREATE TABLE employees
 	notes text
 );
 
-CREATE TABLE customer
+CREATE TABLE customers
 (
 	customer_id varchar(5) PRIMARY KEY,
 	company_name varchar(200),
@@ -22,9 +22,12 @@ CREATE TABLE customer
 CREATE TABLE orders
 (
 	order_id int PRIMARY KEY,
-	customer_id varchar(5) REFERENCES customer_data(customer_id),
+	customer_id varchar(5) REFERENCES customers(customer_id),
 	employee_id int REFERENCES employees(employee_id),
 	order_date date NOT NULL,
 	ship_city varchar(100) NOT NULL
 );
 
+SELECT * from employees;
+SELECT * from customers;
+SELECT * from orders;
